@@ -18,21 +18,22 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
 
+    int score = 0;
+
+    //the variable "score" will hold the amount of right answers the user gets
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
-    //the variable "score" will hold the amount of right answers the user gets
-
-    int score = 0;
-
     /**
      * The method that checks all the RadioGroup questions
-     * @param correctAns is the predesignated correct answer that will be checked to see if selected
+     *
+     * @param correctAns    is the predesignated correct answer that will be checked to see if selected
      * @param questionGroup is the RadioGroup that the answer belongs to, for the wrongly-selected answer to be
-     *  displayed as incorrect
+     *                      displayed as incorrect
      */
 
     public void radioAnswerCheck(RadioButton correctAns, RadioGroup questionGroup) {
@@ -138,8 +139,7 @@ public class MainActivity extends AppCompatActivity {
                 } else if (counter < (wrongAns.length)) {
                     counter += 1;
                     continue;
-                }
-                else {
+                } else {
                     lyricsCorrect1.setTextColor(getResources().getColor(R.color.colorCorrect));
                     lyricsCorrect2.setTextColor(getResources().getColor(R.color.colorCorrect));
                     score += 1;
@@ -176,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     *onClick method to erase previous stored values
+     * onClick method to erase previous stored values
      */
     public void reset(View v) {
         Intent intent = getIntent();
@@ -186,8 +186,9 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Method to reveal a correct answer for the RadioGroup questions as well as their paired factual tidbit
+     *
      * @param textString refers to the correct answer to the question
-     * @param infodump is the extra information that will be displayed
+     * @param infodump   is the extra information that will be displayed
      */
     public void rightAnswersReveal(TextView textString, TextView infodump) {
         textString.setTextColor(getResources().getColor(R.color.colorCorrect));
