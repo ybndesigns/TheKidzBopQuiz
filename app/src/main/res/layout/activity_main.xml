@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_small"
+    android:fillViewport="false"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/kidz_bop"
+                android:contentDescription="The Kidz Bop Logo"
+                android:scaleType="center" />
+
+            <TextView
+                style="@style/displayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The" />
+
+            <TextView
+                style="@style/displayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="Quiz" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/TitleTexts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#c8e8e8e8"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:text="The Premise" />
+
+        <TextView
+            style="@style/BodyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#c8e8e8e8"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Kidz Bop is especially made for kids to be able to listen to popular music, so they change questionable lyrics to something a little more age-appropriate." />
+
+        <TextView
+            style="@style/TitleTexts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#c8e8e8e8"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="The Rules" />
+
+        <TextView
+            style="@style/BodyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#c8e8e8e8"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Each question has the title and original artist of a song covered by Kidz Bop as well as the offending lyric. It's up to you to think like a Kidz Bop writer and pick which prospective lyric made the cut." />
+
+        <LinearLayout
+            android:id="@+id/the_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="#c8e8e8e8"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                style="@style/TitleTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="There's Nothing Holding Me Back by Shawn Mendes" />
+
+            <TextView
+                style="@style/TitleTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="&quot;She says that she's never afraid/Just picture everybody naked&quot;"
+                android:textStyle="italic" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/question_1_radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/question_1_wrong1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Just take a sec for relaxation" />
+
+                <RadioButton
+                    android:id="@+id/question_1_correct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Just picture everybody smiling" />
+
+                <RadioButton
+                    android:id="@+id/question_1_wrong2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Just tell them to get in formation" />
+
+                <RadioButton
+                    android:id="@+id/question_1_wrong3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Just picture everybody dancing" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question_1_infodump"
+                style="@style/BodyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Even though the prospect of nudity is just to induce levity in this instance, Kidz Bop regularly avoids any hints of being unclothed in their covers."
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="#c8e8e8e8"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                style="@style/TitleTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="...Ready For It? by Taylor Swift" />
+
+            <TextView
+                style="@style/TitleTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="&quot;Knew he was a killer first time that I saw him&quot;"
+                android:textStyle="italic" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/question_2_radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/question_2_wrong1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Knew he was a bad boy first time that I saw him" />
+
+                <RadioButton
+                    android:id="@+id/question_2_wrong2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Knew he was a thriller first time that I saw him" />
+
+                <RadioButton
+                    android:id="@+id/question_2_wrong3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Knew that he was no good first time that I saw him" />
+
+                <RadioButton
+                    android:id="@+id/question_2_correct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Knew he was a dancer first time that I saw him" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question_2_infodump"
+                style="@style/BodyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Although the prospect of the person in question being a dancer doesn't fit the theme of the rest of the song, Kidz Bop generally avoids topics of murder."
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="#c8e8e8e8"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                style="@style/TitleTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="That's What I Like by Bruno Mars" />
+
+            <TextView
+                style="@style/TitleTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="&quot;You can be my freaka[flicka]/Girl, I'll be a freako[fleeko]&quot;"
+                android:textStyle="italic" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/question_3_radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/question_3_wrong1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You can be my chica/I can be your chico" />
+
+                <RadioButton
+                    android:id="@+id/question_3_correct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You can come and see though/Hey, come on and we go" />
+
+                <RadioButton
+                    android:id="@+id/question_3_wrong2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Really want to see, so/Take my hand and we’ll go" />
+
+                <RadioButton
+                    android:id="@+id/question_3_wrong3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You can be my mija/Girl, I’ll be your mijo" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question_3_infodump"
+                style="@style/BodyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The original lyric by Bruno Mars has been disputed over on whether it says &quot;freaka&quot; or &quot;flicka&quot;, which is slang for a classy and beautiful girl. After being asked on Twitter, Bruno Mars said he was tired of correcting people and said that the lyric is whatever people want it to be."
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="#c8e8e8e8"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                style="@style/TitleTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="I'm the One by DJ Khaled" />
+
+            <TextView
+                style="@style/TitleTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="&quot;Don't make me catch a body/That's for any and everybody&quot;"
+                android:textStyle="italic" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/question_4_radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/question_4_correct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't make me catch somebody" />
+
+                <RadioButton
+                    android:id="@+id/question_4_wrong1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't make me rock this body" />
+
+                <RadioButton
+                    android:id="@+id/question_4_wrong2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't make me prove you’re shotty" />
+
+                <RadioButton
+                    android:id="@+id/question_4_wrong3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't make me catch a body" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question_4_infodump"
+                style="@style/BodyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Though at first glance the original lyric seems harmless, to &quot;catch a body&quot; is slang for murdering someone."
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="#c8e8e8e8"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                style="@style/TitleTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Paris by The Chainsmokers" />
+
+            <TextView
+                style="@style/TitleTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="&quot;Standing there with a frown and a cigarette/Posting pictures of yourself on the Internet&quot;"
+                android:textStyle="italic" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/question_5_radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/question_5_wrong1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Standing there with a frown, like you only get/Posting pictures of yourself on the Internet" />
+
+                <RadioButton
+                    android:id="@+id/question_5_correct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Standing there with a frown, like you only get/Posting pictures of your trip on the Internet" />
+
+                <RadioButton
+                    android:id="@+id/question_5_wrong2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Standing there with a frown, like you only get/Taking pictures when you’re sick of the Internet" />
+
+                <RadioButton
+                    android:id="@+id/question_5_wrong3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Standing there with the frown, like you only get/Posting pictures every trip on the internet" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question_5_infodump"
+                style="@style/BodyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Along with the drug use and selfie-posting, the cover makes sure to avoid the sentiment of the kids traveling to specifically get away from their parents."
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="#c8e8e8e8"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                style="@style/TitleTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="New Rules by Dua Lipa" />
+
+            <TextView
+                style="@style/TitleTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="&quot;Three: Don't be his friend/You know you're gonna wake up in his bed in the morning&quot;"
+                android:textStyle="italic" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/question_6_radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/question_6_wrong1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You know he’s gonna dump you for his friend in the morning" />
+
+                <RadioButton
+                    android:id="@+id/question_6_correct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You know you're gonna meet up with your friends in the morning" />
+
+                <RadioButton
+                    android:id="@+id/question_6_wrong2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You know a fight is just around the bend in the morning" />
+
+                <RadioButton
+                    android:id="@+id/question_6_wrong3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You know there’s gonna have to be an end in the morning" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question_6_infodump"
+                style="@style/BodyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The correct answer may sound peculiar due to the original lyric that follows: &quot;If you're under him, you ain't getting over him.&quot; However, in the cover that lyric is changed to &quot;If you're there with him&quot;."
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="#c8e8e8e8"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/multiple_answers_group"
+                style="@style/TitleTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Which songs covered by Kidz Bop had its lyrics unchanged?" />
+
+            <CheckBox
+                android:id="@+id/checkbox_correct1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Look What You Made Me Do by Taylor Swift" />
+
+            <CheckBox
+                android:id="@+id/checkbox_correct2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Livin' La Vida Loca by Ricky Martin" />
+
+            <CheckBox
+                android:id="@+id/checkbox_wrong1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gangnam Style by PSY" />
+
+            <CheckBox
+                android:id="@+id/checkbox_wrong2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Best Song Ever by One Direction" />
+
+            <CheckBox
+                android:id="@+id/checkbox_wrong3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shake It Off by Taylor Swift" />
+
+            <TextView
+                android:id="@+id/question_7_infodump"
+                style="@style/BodyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Despite Kidz Bop currently avoiding all mentions of nuditiy, implied alcohol/drug use, and death in its covers, this was not so in 2001 when &quot;Livin La Vida Loca&quot; was released.\nAlthough &quot;Look What You Made Me Do&quot; may have some questionable motives, there were no lyrics risque enough to change."
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="#c8e8e8e8"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                style="@style/TitleTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Bonus Question: What Youtuber (username please) inspired this quiz?" />
+
+            <EditText
+                android:id="@+id/youtuber_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Place Answer Here" />
+
+            <TextView
+                android:id="@+id/question_8_infodump"
+                style="@style/BodyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Youtuber Jack Douglass, also known as jacksfilms, made a video in 2016 of his own Kidz Bop Quiz which he played with his friends."
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="submitScore"
+            android:text="Submit" />
+
+        <LinearLayout
+            android:id="@+id/answer_reveal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/answer_text"
+                style="@style/TitleTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#c8e8e8e8"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="reset"
+                    android:text="Try Again?" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="viewAnswers"
+                    android:text="See Answers" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

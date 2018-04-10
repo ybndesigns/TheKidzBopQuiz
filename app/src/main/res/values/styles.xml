@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="displayText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#f000adff</item>
+        <item name="android:fontFamily">@font/titanone_regular</item>
+        <item name="android:textSize">54sp</item>
+    </style>
+
+    <style name="TitleTexts" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#ec000000</item>
+        <item name="android:fontFamily">@font/titles</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="BodyText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#ec000000</item>
+        <item name="android:fontFamily">@font/body</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>
